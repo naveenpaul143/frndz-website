@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css"> -->
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <script src="bootstrap/js/bootstrap.bundle.js"></script> -->
+    <script src="https://kit.fontawesome.com/db8ff86ff7.js" crossorigin="anonymous"></script>
+    <title>products</title>
+    <link rel="stylesheet" href="/footer/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Libre+Caslon+Display&family=Philosopher&family=Special+Elite&display=swap');
+   .w-100 {
+     width: 100% !important;
+     height:75vh;
+   }
+   #Home:hover{
+    color:yellow;
+  }
+  #Books:hover{
+    color:yellow;
+  }
+  #courses:hover{
+    color:yellow;
+  }
+  #products:hover{
+    color:yellow;
+  }
+  #about:hover{
+    color:yellow;
+  }
+  #Counselling:hover{
+    color:yellow;
+  }
+.font-style{
+font-family: 'Special Elite', cursive;
+}
+nav{
+    /* background: linear-gradient(45deg,rgb(123, 39, 84),rgb(47, 67, 112)); */
+    background-color: #150734;
+}
+
+
+   .card{
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(2, 2, 2);
+    background-color: #ffffff;
+    border: 1px solid #ecf0f3;
+    
+   }
+   body{
+    /* background-color: #ecf0f3; */
+    background: linear-gradient(90deg,rgb(86, 182, 150),deeppink);
+  
+   }
+   .card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
+   #icon{
+    font-size: 21px;
+   }
+#btn2{
+    background-color:lightslategray;
+    color:white;
+   
+}
+#btn3{
+    background-color:rgba(71, 15, 15, 0.832);
+    color:white;
+   
+}
+#btn6{
+    background-color:deeppink;
+    color:white;
+   
+}
+.products{
+  margin-top: 90px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.containers{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.whatsap{
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+ 
+}
+
+
+
+
+
+
+</style>
+<body class="bg-light">
+  
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark p-2 fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-light fs-2 font-style"> <img src="frndz.logo.jpeg" alt="" width="40" height="40" class="me-1 rounded-circle  mb-2 ">FRNDZ</a>
+            <button class="navbar-toggler btn btn-outline-muted " type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="navbar-nav ms-auto h5 font-style">
+                <li class="nav-item font-style"><a href="navbar.html" class="nav-link active text-warning" id="Home">Home</a></li>
+        <li class="nav-item font-style"><a href="Books.html" class="nav-link"id="Books">Books</a></li>
+        <li class="nav-item font-style"><a href="courses.html" class="nav-link" id="courses">Courses</a></li>
+        <li class="nav-item font-style"><a href="products.html" class="nav-link" id="products">Products</a></li>
+        <li class="nav-item font-style"><a href="counselling.html" class="nav-link" id="Counselling">Counselling</a></li>
+        <li class="nav-item font-style"><a href="#contact" class="nav-link" id="about">About us</a></li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link1</a></li>
+                      <li><a class="dropdown-item" href="#">Link2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Thank you!</a></li>
+                    </ul>
+                    </li>
+                   
+            </ul> -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning mb-1" type="submit">Search</button>
+              </form>
+
+          </div>
+        </div>
+    </nav>
+</header>
+<main>
+  <section id="products" class="products">
+    <div class="container mt-3  p-4 text-dark">
+      <div class="grid">
+          <div class="row ">
+              <div class="col-lg-4 col-md-6 mt-3 ">
+                      <div class="card w-75  h-100 m-auto">
+                          <img src="five.jpeg" alt="" class="img-fluid ">
+                          <div class="card-body text-center">
+                              <h5 class="card-title">Customized Wrist Watch</h5>
+                              <div class="stars d-flex flex-column">
+                                  <span>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </span>
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1"  id="icon"></i>999/-
+                          </p>
+                              <button class="btn btn-primary bg-info">Buy Now</button>
+                              
+  
+                              </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mt-3">
+                  <div class="card w-75  h-100 m-auto">
+                      <img src="four.jpeg" alt="" class="img-fluid">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Customized frames</h5>
+                          <div class="stars d-flex flex-column">
+                          
+                          <span>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star "></i>
+                              <i class="fa-solid fa-star"></i>
+                          </span>
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1"  id="icon"></i>300/-
+                          </p>
+                          <button class="btn btn-primary " id="btn2">Buy Now</button>
+                      </div>
+                          
+                      </div>
+                  </div>
+          </div>
+              <div class="col-lg-4 col-md-6 mt-3 ">
+                  <div class="card w-75 h-100 m-auto">
+                      <img src="one.jpeg" alt="" class="img-fluid">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Feather T-shirt printing</h5>
+                          <div class="stars d-flex flex-column">
+                          
+                          <span>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </span>
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1"  id="icon"></i>250/-
+                          </p>
+                          <button class="btn btn-primary" id="btn3">Buy Now</button>
+                      </div>
+                          
+                      </div>
+                  </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-3 ">
+              <div class="card w-75 h-100 m-auto">
+                  <img src="three.jpeg" alt="" class="img-fluid mt-2">
+                  <div class="card-body text-center">
+                      <h5 class="card-title mt-4">Customized cup printing</h5>
+                      <div class="stars d-flex flex-column">
+                          <span >
+                             
+                      <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star" ></i>
+                              <i class="fa-solid fa-star"></i>
+                          </span>
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1 mt-3"  id="icon"></i>299/-
+                          </p>
+                      <button class="btn btn-primary bg-dark  mt-3">Buy Now</button>
+                  </div>
+                      
+                  </div>
+              </div>
+              
+      </div>
+      <div class="col-lg-4 col-md-6 mt-3 ">
+          <div class="card w-75 h-100 m-auto">
+              <img src="six.jpeg" alt="" class="img-fluid">
+              <div class="card-body text-center">
+                  <h5 class="card-title">Butterfly glass painting</h5>
+                  <div class="stars d-flex flex-column">
+                      <span>
+                  <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </span>
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1"  id="icon"></i>250/-
+                          </p>
+                  <button class="btn btn-primary bg-success">Buy Now</button>
+              </div>
+                  
+              </div>
+          </div>
+          
+     
+  </div>
+  <div class="col-lg-4 col-md-6 mt-3 ">
+      <div class="card w-75 h-100 m-auto">
+          <img src="two.jpeg" alt="" class="img-fluid">
+          <div class="card-body text-center">
+              <h5 class="card-title">Thread Bangles</h5>
+              <div class="stars d-flex flex-column">
+                  <span>
+              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                              <i class="fa-solid fa-star text-warning "></i>
+                              <i class="fa-solid fa-star text-warning"></i>
+                          </span> 
+                          <p class="h4">
+                              <i class="fa-solid fa-indian-rupee-sign fa-0x me-1"  id="icon"></i>100/-
+                          </p>
+              <button class="btn btn-primary " id="btn6">Buy Now</button>
+  
+          </div>
+          </div>
+         </div>
+      
+          </div>
+      </div>
+  
+   </div>
+   
+  </section>
+</main>
+<footer class="footer" id="contact">
+    <div class="containers">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <!-- <li><a href="#">affiliate program</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Counselling</h4>
+          <ul>
+            <li><a href="#">Jai Krishna</a></li>
+            <li><a href="#">Maya</a></li>
+            <li><a href="#">Naveen paul</a></li>
+            <!-- <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">crafts</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-link">
+            <a href="#"><i class="fa-brands fa-facebook text-primary me-2 fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube text-danger me-2 fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in text-info me-2 fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-info me-2 fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>To Join us</h4>
+          <div class="containers">
+            <div class="card shadow-none">
+              <label for="" class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter Name">
+              <label for="" class="form-label">Email ID</label>
+              <input type="email" class="form-control" placeholder="Enter Email">
+              <label for="" class="form-label">Message</label>
+              <input type="text" class="form-control" placeholder="Enter Message">
+              <input type="submit" class="btn btn-danger" value="Submit">
+  
+            </div>
+           
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Create profile</h4>
+          <div class="containers">
+            <div class="card  shadow-none">
+              <label for="" class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Enter Name">
+              <label for="" class="form-label">Email ID</label>
+              <input type="email" class="form-control" placeholder="Enter Email">
+              <label for="" class="form-label">Moblie</label>
+              <input type="text" class="form-control" placeholder="Enter phone number">
+              <input type="submit" class="btn btn-danger" value="Submit">
+  
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="whatsap ">
+    <a href="tel:+91 9084  516 324"><i class="fa-solid fa-phone fa-2x text-info"></i></i></a>
+   </div>
+    </body>
+    </html>

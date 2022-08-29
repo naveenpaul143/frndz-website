@@ -1,0 +1,234 @@
+<!-- 
+🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
+👨🏻‍⚕️ By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Playlists</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/db8ff86ff7.js" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Libre+Caslon+Display&family=Philosopher&family=Special+Elite&display=swap');
+    .w-100 {
+      width: 100% !important;
+      height:75vh;
+    }
+    #Home:hover{
+     color:yellow;
+   }
+   #Books:hover{
+     color:yellow;
+   }
+   #courses:hover{
+     color:yellow;
+   }
+   #products:hover{
+     color:yellow;
+   }
+   #about:hover{
+     color:yellow;
+   }
+   #Counselling:hover{
+     color:yellow;
+   }
+ .font-style{
+ font-family: 'Special Elite', cursive;
+ }
+ nav{
+     /* background: linear-gradient(45deg,rgb(123, 39, 84),rgb(47, 67, 112)); */
+     background-color: #150734;
+ }
+ 
+ #cont{
+  margin-top: 90px;
+}
+
+.whatsap{
+  position: fixed;
+  bottom: 40px;
+  left: 30px;
+ 
+}
+ </style>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark p-2 fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-light fs-2 font-style"> <img src="frndz.logo.jpeg" alt="" width="40" height="40" class="me-1  rounded-circle mb-2 ">FRNDZ</a>
+            <button class="navbar-toggler btn btn-outline-muted " type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarcontent">
+            <ul class="navbar-nav ms-auto h5 font-style">
+                <li class="nav-item font-style"><a href="navbar.html" class="nav-link active text-warning" id="Home">Home</a></li>
+        <li class="nav-item font-style"><a href="Books.html" class="nav-link"id="Books">Books</a></li>
+        <li class="nav-item font-style"><a href="courses.html" class="nav-link" id="courses">Courses</a></li>
+        <li class="nav-item font-style"><a href="products.html" class="nav-link" id="products">Products</a></li>
+        <li class="nav-item font-style"><a href="counselling.html" class="nav-link" id="Counselling">Counselling</a></li>
+        <li class="nav-item font-style"><a href="#" class="nav-link" id="about">About us</a></li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link1</a></li>
+                      <li><a class="dropdown-item" href="#">Link2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Thank you!</a></li>
+                    </ul>
+                    </li>
+                   
+            </ul> -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning mb-1" type="submit">Search</button>
+              </form>
+
+          </div>
+        </div>
+    </nav>
+</header>
+    <main class="container bg-dark text-white border-2" id="cont">
+        <section class="main-video">
+            <video src="one.mp4" controls autoplay muted></video>
+            <h3 class="title">Self Introduction.</h3>
+        </section>
+
+        <section class="video-playlist">
+            <h3 class="title">Video Playlist</h3>
+            <p>5 lessions &nbsp; . &nbsp; 10m 14s</p>
+            <div class="videos">
+
+            </div>
+        </section>
+    </main>
+    <script>
+      /*
+🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
+👨🏻‍⚕️ By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+*/
+
+const main_video = document.querySelector('.main-video video');
+const main_video_title = document.querySelector('.main-video .title');
+const video_playlist = document.querySelector('.video-playlist .videos');
+
+let data = [
+    {
+        'id': 'a1',
+        'title': 'Self Introduction',
+        'name': 'one.mp4',
+        'duration': '1:00',
+    },
+    {
+        'id': 'a2',
+        'title': 'Chemistry Experiment',
+        'name': 'two.mp4',
+        'duration': '0:49',
+    },
+    {
+        'id': 'a3',
+        'title': 'Bitcoin and Crypto Currency',
+        'name': 'three.mp4',
+        'duration': '1:29',
+    },
+
+    {
+        'id': 'a4',
+        'title': 'Introduction to Market',
+        'name': 'four.mp4',
+        'duration': '1:13',
+    },
+    {
+        'id': 'a5',
+        'title': 'About Digital Marketing',
+        'name': 'five.mp4',
+        'duration': '1:16',
+    }
+    // {
+    //     'id': 'a6',
+    //     'title': 'embed google map to contact form',
+    //     'name': 'embed google map to contact form.mp4',
+    //     'duration': '5:33',
+    // },
+    // {
+    //     'id': 'a7',
+    //     'title': 'password strength checker javascript web app',
+    //     'name': 'password strength checker javascript web app.mp4',
+    //     'duration': '0:29',
+    // },
+
+    // {
+    //     'id': 'a8',
+    //     'title': 'custom range slider',
+    //     'name': 'custom range slider.mp4',
+    //     'duration': '1:12',
+    // },
+    // {
+    //     'id': 'a9',
+    //     'title': 'animated shopping cart',
+    //     'name': 'animated shopping cart.mp4',
+    //     'duration': '3:38',
+    // },
+
+];
+
+data.forEach((video, i) => {
+    let video_element = `
+                <div class="video" data-id="${video.id}">
+                    <img src="images/play.svg" alt="">
+                    <p>${i + 1 > 9 ? i + 1 : '0' + (i + 1)}. </p>
+                    <h3 class="title">${video.title}</h3>
+                    <p class="time">${video.duration}</p>
+                </div>
+    `;
+    video_playlist.innerHTML += video_element;
+})
+
+let videos = document.querySelectorAll('.video');
+videos[0].classList.add('active');
+videos[0].querySelector('img').src = 'pause.svg';
+
+videos.forEach(selected_video => {
+    selected_video.onclick = () => {
+
+        for (all_videos of videos) {
+            all_videos.classList.remove('active');
+            all_videos.querySelector('img').src = 'play.svg';
+
+        }
+
+        selected_video.classList.add('active');
+        selected_video.querySelector('img').src = 'pause.svg';
+
+        let match_video = data.find(video => video.id == selected_video.dataset.id);
+        main_video.src = '' + match_video.name;
+        main_video_title.innerHTML = match_video.title;
+    }
+});
+
+
+    </script>
+    <div class="whatsap ">
+      <a href="tel:+91 9084  516 324"><i class="fa-solid fa-phone fa-2x text-info"></i></i></a>
+     </div>
+</body>
+
+</html>
